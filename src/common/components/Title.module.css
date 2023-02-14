@@ -1,0 +1,26 @@
+.title {
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 0 30px;
+    position: relative;
+}
+.title::before {
+    content: '';
+    background: #4e93e6;
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-30px, 50px);
+    margin: 30px auto;
+}
+
+.title h2 {
+    font: 700 40px/1.2 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 5px;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
