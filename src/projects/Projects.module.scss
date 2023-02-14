@@ -1,24 +1,30 @@
-.projectsBlock {
-    display: flex;
-    justify-content: center;
-    background-color: #1f1f20;
-    padding: 100px 0;
-}
+@import "src/common/styles/sass/variables";
 
-.projectsContainer {
+.projectsBlock {
+  display: flex;
+  justify-content: center;
+  background-color: $bgMainColor;
+  padding: 100px 0;
+
+
+  .projectsContainer {
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap
-}
+  }
 
-.projects {
+  .projects {
     width: 100%;
-    border: 1px solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
+  }
 }
+
+
+
+
 
 
 

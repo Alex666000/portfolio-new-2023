@@ -1,0 +1,100 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.project {
+  min-width: 450px;
+  background-color: $bgMainColor;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  @media screen and (max-width: 570px) {
+    min-width: 285px;
+    background-color: $bgMainColor;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+
+  .imageContainer {
+    background-color: $bgLightColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 260px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    @media screen and (max-width: 381px) {
+      min-width: 285px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: .4;
+    }
+
+    .viewBtn {
+      max-width: 100%;
+      background-color: cornflowerblue;
+      padding: 10px 20px;
+      vertical-align: middle;
+      border-style: none;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+  }
+
+  .descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgLightColor;
+    color: $textColor;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 25px 20px;
+
+    .projectTitle {
+      font-family: $titleFontFamily;
+      line-height: 1.2;
+      color: $textColor;
+      font-weight: 700;
+      font-size: 16px;
+      @include fontOfText($titleFontFamily, 1.2, 16px);
+
+
+      text-transform: uppercase;
+      margin: 0 0 15px;
+      padding: 0;
+
+    }
+
+    .description {
+      font-family: $textFontFamily;
+      line-height: 1.8;
+      color: $textColor;
+      font-size: 14px;
+      @include fontOfText($textFontFamily, 1.8, 14px);
+
+      font-weight: 400;
+      text-align: center;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+  }
+}
+
+
+
