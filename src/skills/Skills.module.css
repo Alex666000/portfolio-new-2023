@@ -1,9 +1,11 @@
 .skillsBlock {
     min-height: 100vh;
-    background-color: #83bb83;
+    background-color: #1f1f20;
     display: flex;
     justify-content: center;
     border: 1px solid;
+    padding: 100px 0px;
+
 }
 
 
@@ -28,6 +30,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
 
 }
 

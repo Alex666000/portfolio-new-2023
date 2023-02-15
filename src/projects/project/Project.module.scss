@@ -24,10 +24,12 @@
     min-height: 260px;
     width: 100%;
     object-fit: cover;
+    // хак картинка - фото
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+
     @media screen and (max-width: 381px) {
       min-width: 285px;
     }
@@ -67,14 +69,8 @@
     padding: 25px 20px;
 
     .projectTitle {
-      font-family: $titleFontFamily;
-      line-height: 1.2;
-      color: $textColor;
-      font-weight: 700;
-      font-size: 16px;
       @include fontOfText($titleFontFamily, 1.2, 16px);
-
-
+      font-weight: 700;
       text-transform: uppercase;
       margin: 0 0 15px;
       padding: 0;
@@ -82,12 +78,7 @@
     }
 
     .description {
-      font-family: $textFontFamily;
-      line-height: 1.8;
-      color: $textColor;
-      font-size: 14px;
       @include fontOfText($textFontFamily, 1.8, 14px);
-
       font-weight: 400;
       text-align: center;
       max-width: 100%;

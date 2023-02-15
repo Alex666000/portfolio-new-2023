@@ -1,0 +1,42 @@
+@import "src/common/styles/sass/variables.scss";
+
+.mainBlock {
+  height: 100vh;
+  display: flex;
+  background-color: $bgMainColor;
+  justify-content: center;
+  padding: 100px 0px;
+
+
+  .container {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .description {
+      width: 300px;
+      background-color: $bgMainColor;
+      color: $textColor;
+    }
+
+    .photo {
+      min-width: 343px;
+      min-height: 430px;
+      background-color: $bgMainColor;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    @media screen and (max-width: 757px) {
+      justify-content: center;
+    }
+  }
+}
+
+

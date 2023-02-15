@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './DistancWork.module.css';
+import s from './DistancWork.module.scss';
 import comMonContainer from '../common/styles/commonContainer.module.css';
 
 

@@ -1,0 +1,79 @@
+@import "src/common/styles/sass/variables.scss";
+
+.contactsBlock {
+  background-color: $bgMainColor;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  font: 400 14px/1.8 'Poppins', sans-serif;
+}
+
+.contactsContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  background-color: #eeeef5;
+}
+
+.contactForm {
+  width: 540px;
+  background-color: #1f1f20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .formName {
+    width: 540px;
+    margin-bottom: 1rem;
+    background-color: #252527;
+    border: 1px solid #4a4a4a;
+    font-size: 12px;
+    padding: 0 15px;
+    border-radius: 0;
+  }
+
+  .formEmail {
+    width: 540px;
+    margin-bottom: 1rem;
+    background-color: #252527;
+    border: 1px solid #4a4a4a;
+    font-size: 12px;
+    padding: 0 15px;
+    border-radius: 0;
+  }
+
+  .formTextarea {
+    background-color: #252527;
+    border: 1px solid #4a4a4a;
+    font-size: 12px;
+    padding: 0 15px;
+    border-radius: 0;
+  }
+}
+
+
+.contactForm input, .contactForm textarea {
+  width: 100%;
+}
+
+.submitBtn {
+  display: block;
+  font: 400 14px/1.2 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 7px 20px;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  max-width: 170px;
+  margin: 15px auto;
+  z-index: 22;
+  text-align: center;
+  border-radius: 0px;
+  width: 100%;
+  border: none;
+  position: relative;
+}

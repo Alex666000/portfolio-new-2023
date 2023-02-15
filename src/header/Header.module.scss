@@ -1,0 +1,22 @@
+@import "src/common/styles/sass/variables.scss";
+
+.headerBlock {
+  height: 80px;
+  background-color: #262626;
+  border: 1px solid;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    & a {
+      color: $textColor;
+    }
+  }
+}
+
